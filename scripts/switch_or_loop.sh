@@ -7,7 +7,7 @@ SESSION_NAME="$1"
 source "$CURRENT_DIR/helpers.sh"
 
 dismiss_session_list_page_from_view() {
-	tmux send-keys C-c
+	tmux send-keys -X cancel
 }
 
 session_name_not_provided() {
